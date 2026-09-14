@@ -5,3 +5,6 @@ kreisajā apakšā paneli FileSystem - visi projekta faili.
 centrā Viewport - tur redzēsi spēles laukumu.
 labajā pusē paneli Inspector - tur maina izvēlētā objekta īpašības.
 apakšā cilni Output - tur parādīsies tavas programmas izdrukas.
+
+
+Mainot bumbas y = 0, tā iet uz augšu

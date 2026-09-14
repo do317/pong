@@ -3,18 +3,46 @@
 [ext_resource type="PackedScene" uid="uid://d4j7xe1qi3tfu" path="res://paddle.tscn" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://cvyqqc3mo87ka" path="res://Hello.cs" id="2_0xm2m"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fco5r"]
+
 [node name="Main" type="Node2D" unique_id=560389294]
 
 [node name="Bumba" type="Sprite2D" parent="." unique_id=1178010295]
+position = Vector2(640, 360)
 
 [node name="Punkti" type="Label" parent="." unique_id=611246421]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 600.0
+offset_top = 40.0
+offset_right = 640.0
+offset_bottom = 63.0
+theme_override_font_sizes/font_size = 40
+text = "0 : 0"
 
 [node name="PaddleLeft" parent="." unique_id=400269907 instance=ExtResource("1_ig7tw")]
+position = Vector2(60, 360)
 
 [node name="PaddleRight" parent="." unique_id=1729052128 instance=ExtResource("1_ig7tw")]
-position = Vector2(52, 0)
+position = Vector2(1220, 360)
 
 [node name="Hello" type="Node" parent="." unique_id=2121816646]
 script = ExtResource("2_0xm2m")
+
+[node name="SienaAugsa" type="StaticBody2D" parent="." unique_id=1836818559]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SienaAugsa" unique_id=525927053]
+position = Vector2(640, 10)
+scale = Vector2(1280, 20)
+shape = SubResource("RectangleShape2D_fco5r")
+
+[node name="SienaApaksa" type="StaticBody2D" parent="." unique_id=246456715]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SienaApaksa" unique_id=794949672]
+position = Vector2(640, 710)
+scale = Vector2(1280, 20)
+shape = SubResource("RectangleShape2D_fco5r")
+
+[node name="VidusLinija" type="Line2D" parent="." unique_id=1397085837]
+points = PackedVector2Array(640, 0, 640, 720)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=918629032]
+position = Vector2(640, 360)
