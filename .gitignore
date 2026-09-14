@@ -3,5 +3,6 @@
 /android/
 
 # fails jau bija
-
+bin/
+obj/
 *.tmp
