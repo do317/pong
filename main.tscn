@@ -23,6 +23,8 @@ position = Vector2(60, 360)
 
 [node name="PaddleRight" parent="." unique_id=1729052128 instance=ExtResource("1_ig7tw")]
 position = Vector2(1220, 360)
+InputUp = "p2_up"
+InputDown = "p2_down"
 
 [node name="Hello" type="Node" parent="." unique_id=2121816646]
 script = ExtResource("2_0xm2m")

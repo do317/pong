@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://d4j7xe1qi3tfu"]
 
+[ext_resource type="Script" uid="uid://c2kh0xmt6ou6y" path="res://Paddle.cs" id="1_0sbc1"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eiqrc"]
 
 [node name="PaddleLeft" type="CharacterBody2D" unique_id=400269907]
+script = ExtResource("1_0sbc1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1857351336]
 shape = SubResource("RectangleShape2D_eiqrc")
